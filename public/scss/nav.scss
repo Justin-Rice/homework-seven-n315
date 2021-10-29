@@ -1,0 +1,143 @@
+nav{
+    width: 30px;
+    height: 30px;
+    //background-color: red;
+    position: fixed;
+    top: 45px;
+    right: 50px;
+    display: none;
+    font-weight: 100;
+   
+    i{
+       
+    }
+    //position: relative;
+
+}
+
+.mobile-nav {
+    display: none;
+    //   animation: nav-in 2;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark-pink;
+    opacity: 95%;
+    // display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: Caveat;
+      font-size: 20px;
+    }
+    .active{
+        border-bottom: black solid 3px;
+    }
+    #logOut-mobile{
+      display: none;
+    }
+    #recipe-mobile{
+      display: none;
+    }
+  }
+  @keyframes nav-in {
+    from {
+      margin-top: -1024px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }
+  @keyframes nav-out {
+    from {
+      margin-top: 0px;
+    }
+    to {
+      margin-top: -1024px;
+    }
+  }
+
+
+.logo{
+    position: fixed;
+    top: 36px;
+    left: 37px;
+}
+
+.link-nav{
+    width: 544px;
+    height: 54px;
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    margin-bottom: 10px;
+   //background-color: royalblue;
+
+   .active{
+       border-bottom: black solid 3px;
+    // text-decoration-line: underline !important;
+    // text-decoration-thickness: 4px !important;
+    // color: rgb(20, 19, 19);
+    //margin-top: 20px;
+  }
+    
+    .nav-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: Caveat;
+        font-size: 25px;
+        a{
+           //background-color: antiquewhites;
+            color: black;
+            text-align: right;
+            text-decoration: none;
+            font-family: Caveat;
+            
+        }
+        #login{
+            text-align: center;
+            background-color: $yellow;
+            width: 158px;
+            height: 52px;
+           border-radius: 40px 40px;
+           line-height: 50px;
+           box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;   
+        }
+        div#logOut{
+          text-align: center;
+          background-color: $yellow;
+          width: 158px;
+          height: 52px;
+         border-radius: 40px 40px;
+         line-height: 50px;
+         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;   
+         display: none;
+      }
+    }
+    
+    #recipe{
+      display: none;
+    }
+
+
+}
+@media screen and (max-width: 768px) {
+
+    .link-nav{
+        display: none;
+
+    }
+   nav{
+       display: block;
+   }
+    
+}

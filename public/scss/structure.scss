@@ -1,0 +1,35 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+height: 100%;
+}
+h1, h2, h3, h4, h5, h5, h6, p{
+  margin-bottom:16px;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url(../fonts/Caveat-Regular.ttf);
+}
+@font-face {
+    font-family:'Lato' ;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family:'Lato-It' ;
+  src: url(../fonts/Lato-Italic.ttf);
+}
+
+.swal2-shown{
+  font-family: Lato;
+}
+
+
+$green: #A7E8BD;
+$pink: #FCBCB8;
+$dark-pink: #EFA7A7;
+$yellow: #FFD972;
+$red: #F25C54; 
